@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN" "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+<beans>
+	<bean id="xmlMarshaller" class="com.example.web.rest.XmlMarshaller">
+	</bean>
+	<!-- <bean id="helloWorldResource" class="com.example.web.rest.HelloWorldResource">
+		<constructor-arg ref="classPathAppContext" />
+	</bean>
+	<bean id="classPathAppContext"
+		class="org.springframework.context.support.ClassPathXmlApplicationContext"></bean>
+ -->
+	<bean id="employee" class="com.example.web.rest.Employee">
+		<property name="emp_id" value="1"></property>
+		<property name="emp_name" value="reema"></property>
+		<property name="employee_dept" value="cse"></property>
+		<property name="employee_salary" value="100.10"></property>
+	</bean>
+</beans>
